@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="alert('You made it here YAY ! ')">
+    <datalist id="browsers">
+        <option value="chrome"></option>
+        <option value="edge"></option>
+        <option value="opera"></option>
+        <option value="firefox"></option>
+     
+     </datalist>
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+<label>First name :</label>
+<input type ="text"><br><br>
+<label>Last name :</label>
+<input type ="text"><br><br>
+<label>Gender :</label>
+<label>   Female   </label>
+<input type="radio"> 
+<label>   Male    </label><input type="radio" checked="checked">
+<label>   Other    </label><input type="radio">
+<br><br>
+<label>Whar are your hobbies ?     </label>
+<input type="checkbox">
+<label>   Reading   </label>
+<input type="checkbox">
+<label>   Sleeping   </label>
+<input type="checkbox">
+<label>   Drawing    </label>
+</fieldset>
+<br><br>
+<fieldset>
+<label>E-mail :</label>
+<input type="email" placeholder="something@gmail.com">
+<br><br>
+<label>Password :</label>
+<input type="password">
+<br><br>
+<label>Confirm password :</label>
+<input type="password">
+</fieldset>
+<br><br>
+<label>Your birthday :</label>
+<input type="date" step="3">
+<br><br>
+<label>Your phone number :</label>
+<input type="tel" size="100"> <!--l'attribut size precise la largeur visible du champs-->
+<br><br>
+<label>How many children do you have ?</label>
+<input type="number" value="2" min="1" max="4"> <!-- l'attribut value donne une valeur par defaut au champs-->
+<br><br>
+<label>How good are you at english ?</label>
+<input type="range">
+<br><br>
+<label>What color is your hair ? </label>
+<input type="color">
+<br><br>
+<label>Enter your certificate :</label>
+<input type="file" multiple> <!--permettre la selection multiple en maintenant la touche shift ou ctrl-->
+<br><br>
+<label>At what time do you usually wake up ? </label>
+<input type="time">
+<br><br>
+<label>Enter  links of your social media </label>
+<input type="url" autofocus> <!--donner plus d'importance a ce champs , donc le montrer first as soon
+as the page is loaded or charged again-->
+<br><br>
+
+<br><br>
+<label>Using the attribute lis of input tag </label>
+<input list="browsers">
+ <br><br>
+
+ <label>What car do you have</label> 
+ <select multiple>
+   <option>Fiat</option>
+   <option>Toyota</option>
+   <option>Renault</option>
+ </select>
+
+ <br><br>
+
+ <label>What countris have you visited</label> 
+ <select size="2"><!--how many options will be shown from outside -->
+    <optgroup label="Africa"> 
+      <option>Egypt</option>
+      <option>Algeria</option>
+      <option>Tunisia</option>
+    </optgroup>
+    <optgroup label="Europe"> 
+        <option>France</option>
+        <option>United Kingdom</option>
+        <option>Spain</option>
+    </optgroup>
+    <optgroup label="Asia"> 
+        <option>China</option>
+        <option>Japan</option>
+        <option>South Korea</option>
+    </optgroup>
+ </select>
+<label>Done !</label>
+<input type="submit">
+<input type="reset">
+<br><br>
+<label>Your opinion is important !</label><br>
+<textarea placeholder="Write everything in your mind here my dear "> </textarea>
+<br><br>
+<button type="button" onclick="alert('well done!')" >Click me !</button>
+<!--l'utilisation de l'attribut list dans input permet de donner des options predefinies pour la saisie dans le champs
+la liste definie dans la balise datalist avec son attribut id qui = la valeur  de list , et qui a so tour contient
+des balises options , peut etre placee anywhere dans le code , pas obligatoire d'etre imbriquee dans form  -->
+
+<!-- l'attribut readonly ne prend aucune valeur et est utilise pour NE PAS PERMETTRE de changer
+     la valeur du champs -->
+<!--l'attribut pattern prend en valeur une expression reguliere qui conditionne l'information entree -->
+    
+   </form> 
+</body>
+</html>
